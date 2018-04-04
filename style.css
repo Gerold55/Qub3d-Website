@@ -6,7 +6,8 @@
 
 header
 {
-	height: 10xh;
+	height: auto;
+	overflow: auto;
 	background-size: cover;
 	background-position: center;
 }
@@ -15,7 +16,7 @@ header
 {
 	float: right;
 	list-style: none;
-	margin-top: 30px;
+	margin: 40px 16px 0px 0px;
 }
 
 .main-nav li
@@ -30,6 +31,7 @@ header
 	padding: 5px 20px;
 	font-family: "Roboto", sans-serif;
 	font-size: 15px;
+	border: 1px solid transparent;
 }
 
 .main-nav li.active a
@@ -41,12 +43,16 @@ header
 {
 	border: 1px solid black;
 }
-
-.logo img
-{
+.logo {
+	display: inline-block;
 	width: 100px;
 	height: auto;
-	float: left;
+	position: relative;
+}
+.logo img
+{
+	width: 100%;
+	height: auto;
 }
 
 body
@@ -60,7 +66,14 @@ body
 	margin: auto;
 }
 
-.hero
+.team
+{
+	position: absolute;
+	width: 1200px;
+	margin-left: 100px;
+}
+
+.cr
 {
 	position: absolute;
 	width: 1200px;
@@ -72,7 +85,7 @@ h1
 	color: black;
 	text-transform: uppercase;
 	font-size: 70px;
-	margin-top: 200px;
+	margin-top: 75px;
 }
 
 p, br
